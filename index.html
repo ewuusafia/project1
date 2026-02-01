@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sach Batao Na 🎤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="app-card">
+      <header class="app-header">
+        <h1 class="app-title">Sach Batao Na 🎤</h1>
+        <p class="subtitle">A tiny voice‑permission experiment</p>
+      </header>
+
+      <div class="screen-container">
+        <!-- 1️⃣ Landing Screen -->
+        <section id="landingScreen" class="screen active">
+          <p class="main-text">
+            Hi miss 👀<br />
+            Mujhe bataya gaya hai tum bohot innocent ho…<br />
+            Bas aik choti si test hai 😌
+          </p>
+
+          <button id="startBtn" class="primary-btn">
+            Start (I’m not scared)
+          </button>
+        </section>
+
+        <!-- 2️⃣ Mic Permission Screen -->
+        <section id="permissionScreen" class="screen">
+          <p class="main-text">
+            Is test ke liye mujhe tumhari awaaz chahiye.<br />
+            Don’t worry, kuch bhi record ya save nahi hota 🙃
+          </p>
+
+          <button id="allowMicBtn" class="primary-btn">
+            Allow Microphone
+          </button>
+
+          <p id="micError" class="helper-text hidden"></p>
+        </section>
+
+        <!-- 3️⃣ Fake Listening Screen -->
+        <section id="listeningScreen" class="screen">
+          <div class="sound-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+
+          <p id="listeningText" class="main-text">
+            <!-- Filled by JS -->
+          </p>
+        </section>
+
+        <!-- 4️⃣ Funny Twist / Result Screen -->
+        <section id="resultScreen" class="screen">
+          <p class="result-big">❌ Jhoot detected</p>
+          <p class="main-text">
+            Innocent log itna hesitate nahi karte 😌
+          </p>
+          <p class="main-text soft">
+            Relax, mazaaq tha 😄<br />
+            Tumhari reaction bohot cute thi.
+          </p>
+
+          <button id="continueBtn" class="primary-btn">
+            Theek hai, maan liya 😆
+          </button>
+        </section>
+
+        <!-- 5️⃣ End Screen -->
+        <section id="endScreen" class="screen">
+          <p class="main-text">
+            Project complete ✔️<br />
+            Marks milne chahiye ya nahi? 😜
+          </p>
+
+          <div class="button-row">
+            <button id="restartBtn" class="primary-btn">
+              Restart
+            </button>
+            <button class="secondary-btn" type="button">
+              Take Screenshot 📸
+            </button>
+          </div>
+
+          <p class="note">
+            Screenshot button bas show‑off hai…
+            jaise tumhari “innocent” reputation 😉
+          </p>
+        </section>
+      </div>
+
+      <footer class="app-footer">
+        <p class="footer-note">
+          Made with HTML • CSS • JavaScript — no audio is recorded.
+        </p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
